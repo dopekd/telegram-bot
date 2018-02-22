@@ -35,3 +35,16 @@ def run():
         # instapy session closing
 ```
 7. Launch *quickstart_telegram.py* or put the bot functions inside your InstaPy script file.
+
+### Bot functions
+- *setup* is used to read the bot token, allowed IDs and start the Bot
+- *sendStartJob* sends a message containing the name of the job and the starting time
+- *sendEndJob* sends a message containing the name of the job and the ending time; It also sends an additional message containing the last 5 rows of the InstaPy *general.log* file. An example is:
+```
+Liked: 65
+Already Liked: 0
+Inappropriate: 25
+Commented: 23
+Followed: 9
+```
+- *sendError* sends a message containing the error traceback and the current time
