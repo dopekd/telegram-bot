@@ -1,14 +1,14 @@
 # telegram-bot
-This telegram bot is useful to send informations via Telegram messages about the [*InstaPy*](https://github.com/timgrossmann/InstaPy) script automated with cron.
+This telegram bot is useful to receive informations via Telegram messages about the [*InstaPy*](https://github.com/timgrossmann/InstaPy) script automated with cron.
 This idea comes from this [*Telegram-bot*](https://github.com/Tkd-Alex/Telegram-InstaPy-Scheduling/) which allows to send commands to the bot.
 
-### What do you need
-- [*python-telegram-bot*](https://github.com/python-telegram-bot/python-telegram-bot)
+### What you need
+- Install [*python-telegram-bot*](https://github.com/python-telegram-bot/python-telegram-bot)
 - InstaPy working on your pc/server.
 - Telegram bot token.
 
 ### How to setup
-1. Clone this repo in your InstaPy folder.
+1. Copy the needed files in your InstaPy folder (*telegram-bot-data*, *telegram_util.py* and *quickstart_telegram*).
 2. Create a bot with [@BotFather](https://telegram.me/BotFather).
 3. Populate *config.ini* with your data.
 ```
