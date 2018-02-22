@@ -7,15 +7,14 @@ from telegram_util import Telegram_Util
 
 def run():
 
-    # Initialize bot
+    # Initialize telegram bot
     telegram_bot = Telegram_Util()
     telegram_bot.setup()
 
-    insta_username = 'username'
-    insta_password = 'password'
-
-    # set headless_browser=True if you want to run InstaPy on a server
     try:
+        insta_username = 'username'
+        insta_password = 'password'
+
         session = InstaPy(username=insta_username,
                           password=insta_password,
                           headless_browser=False,
@@ -47,13 +46,13 @@ def run():
         telegram_bot.sendEndJob(instapy_job)
     except:
         # If any error occurs, print it in console
-        #and send a message containing the complete traceback
+        # and send a message containing the complete traceback
         import traceback
         error_traceback = traceback.format_exc()
         print(error_traceback)
         telegram_bot.sendError(error_traceback)
     finally:
-        # end the bot session
+        # end the script session
         session.end()
 
 
